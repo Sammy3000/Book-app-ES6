@@ -1,5 +1,6 @@
-import Store from "../modules/Store.js";
-import displayTime from "./dateTime.js";
+import Store from './Store.js';
+import displayTime from './dateTime.js';
+
 export default class UI {
   static displayBooks() {
     const books = Store.getBooks();
@@ -8,8 +9,8 @@ export default class UI {
   }
 
   static addBookToList(book) {
-    const list = document.querySelector("#book-list");
-    const row = document.createElement("tr");
+    const list = document.querySelector('#book-list');
+    const row = document.createElement('tr');
     row.innerHTML = ` 
    
     <tr>
@@ -23,13 +24,13 @@ export default class UI {
   }
 
   static deleteBook(el) {
-    if (el.classList.contains("delete")) {
+    if (el.classList.contains('delete')) {
       el.parentElement.parentElement.remove();
     }
   }
 
   static clearFields() {
-    document.querySelector("#tittle").value = "";
-    document.querySelector("#author").value = "";
+    document.querySelector('#tittle').value = '';
+    document.querySelector('#author').value = '';
   }
 }
