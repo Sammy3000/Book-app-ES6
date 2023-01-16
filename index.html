@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="index.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book App</title>
+  </head>
+  <body>
+    <section class="main-container">
+      <nav class="main-nav">
+        <p class="name">Awesome Books</p>
+        <ul class="menu">
+          <li><a href="#" class="list-menu">List</a></li>
+          <li><a href="#" class="add-new">Add New</a></li>
+          <li><a href="#" class="contact-menu">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="date">
+        <p class="time"></p>
+      </div>
+      <table class="booksContainer">
+        <tbody id="book-list">
+          <h1 class="book-head">All awesome Books</h1>
+        </tbody>
+      </table>
+
+      <form id="book-form" class="form-class">
+        <h2 class="form-heading">Add a New Book</h2>
+        <div class="form-group">
+          <input
+            type="text"
+            id="tittle"
+            class="form-control"
+            placeholder="title"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <input
+            type="text"
+            id="author"
+            class="form-control"
+            placeholder="author"
+            required
+          />
+        </div>
+
+        <input type="submit" value="add-book" class="btn" />
+      </form>
+      <section class="contact">
+        <h1>Contact Information</h1>
+        <p class="contact-info">
+          Do you have any questions or you just want to say "Hello"? You can
+          reach out to us!<br />
+        </p>
+
+        <ul>
+          <li>
+            My Email
+            <a href="towettsammy30@gmail.com">towettsammy30@gmail.com</a>
+          </li>
+          <li>My phone number: +254743793661</li>
+          <li>My address: 43-50400 Nairobi, Kenya.</li>
+        </ul>
+      </section>
+      <footer class="footer">
+        <p class="footer-content">&copy; Towett Sammy</p>
+      </footer>
+    </section>
+    <script type="module" src="index.js"></script>
+  </body>
+</html>

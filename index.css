@@ -1,0 +1,190 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+}
+
+.main-container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+h1 {
+  font-size: 25px;
+  font-family: sans-serif;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.form-group {
+  margin: 1rem 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.form-class {
+  flex-direction: column;
+  align-items: center;
+  display: none;
+}
+
+.form-class .form-group {
+  border: 2px solid black;
+}
+
+.form-heading {
+  font-family: sans-serif;
+  font-style: normal;
+  padding: 2rem 0;
+}
+
+table {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-control {
+  padding: 0.5rem 0.5rem;
+  min-width: 400px;
+}
+
+.btn {
+  background-color: white;
+  border-radius: 2px;
+  border: 3px solid black;
+  box-shadow: 2px 3px #000;
+  color: black;
+  font-weight: bold;
+  margin-left: 300px;
+  padding: 0.2rem;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+::placeholder {
+  text-align: start;
+  color: grey;
+  text-transform: capitalize;
+  font-weight: bold;
+  font-size: larger;
+}
+
+tr,
+td {
+  padding: 8px 3px;
+}
+
+th {
+  padding: 8px 3px;
+  font-size: 0.9em;
+  margin: 25px 0;
+  text-transform: capitalize;
+}
+
+.booksContainer {
+  border: 3px solid black;
+  border-radius: 2px;
+  border-collapse: collapse;
+  margin: 25px auto;
+  font-size: 0.9em;
+}
+
+.booksContainer tbody tr:nth-of-type(odd) {
+  background-color: #ddd;
+  text-align: end;
+}
+
+#book-list tr,
+#book-list td {
+  padding: 8px 3px;
+}
+
+.booksContainer tbody .delete {
+  background-color: white;
+  border-radius: 2px;
+  border: 3px solid black;
+  box-shadow: 2px 3px #000;
+  color: black;
+  font-weight: bold;
+  margin-left: 300px;
+  padding: 0.2rem;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+.main-nav {
+  display: flex;
+  width: 95%;
+  margin: 1rem auto;
+  border: 2px solid rgb(60, 56, 56);
+  justify-content: space-between;
+  height: 3rem;
+  padding: 0 1rem;
+  font-family: sans-serif;
+}
+
+.name {
+  line-height: 3rem;
+  font-weight: 700;
+}
+
+.menu {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.menu li {
+  list-style: none;
+}
+
+.menu li a {
+  line-height: 3rem;
+  text-decoration: none;
+  color: black;
+}
+
+.menu li a:hover:active {
+  color: lightblue;
+}
+
+.date {
+  display: flex;
+  width: 95%;
+  margin: 1rem auto;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+.footer {
+  position: absolute;
+  width: 95%;
+  bottom: 1rem;
+  left: 2%;
+  right: 2%;
+  margin: 0 auto;
+  height: 3rem;
+  border: 2px solid black;
+}
+
+.footer-content {
+  line-height: 3rem;
+  text-align: center;
+}
+
+.contact {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
