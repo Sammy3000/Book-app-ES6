@@ -1,8 +1,10 @@
 import Store from "../modules/Store.js";
+import displayTime from "./dateTime.js";
 export default class UI {
   static displayBooks() {
     const books = Store.getBooks();
     books.forEach((book) => UI.addBookToList(book));
+    displayTime();
   }
 
   static addBookToList(book) {

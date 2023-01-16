@@ -13,7 +13,7 @@ const displayTime = () => {
     .toLocaleString(DateTime.TIME_WITH_SECONDS)
     .toLowerCase();
 
-  document.querySelector(".date").innerText = `${newDate}, ${newTime}`;
+  document.querySelector(".time").textContent = `${newDate}, ${newTime}`;
 };
 
-export default displayTime;
+export default displayTime();
