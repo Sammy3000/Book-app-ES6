@@ -1,3 +1,5 @@
+import Store from ".modules/Store.js";
+// UI Class: Handle UI Tasks
 export default class UI {
   static displayBooks() {
     const books = Store.getBooks();
