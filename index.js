@@ -4,7 +4,9 @@ import Store from "./modules/Store.js";
 
 // Event:Display books
 
-document.addEventListener("DOMContentLoaded", UI.displayBooks);
+document.addEventListener("DOMContentLoaded", () => {
+  UI.displayBooks;
+});
 
 // Event:Add a book
 
