@@ -1,6 +1,6 @@
-import Book from "./book.js";
-import UI from "./UI.js";
-import Store from "./Store.js";
+import Book from ".modules/book.js";
+import UI from ".modules/UI.js";
+import Store from ".modules/Store.js";
 
 // Event:Display books
 
