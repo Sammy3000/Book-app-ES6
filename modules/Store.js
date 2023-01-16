@@ -1,4 +1,3 @@
-// Store Class:Handles Storage
 export default class Store {
   static getBooks() {
     let books;
